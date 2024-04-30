@@ -1,0 +1,129 @@
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+
+  height: 100vh;
+  margin: 0;
+
+  background-color: #222831;
+}
+
+.app-bar {
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.app-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-bar-title {
+  margin: 0 auto;
+}
+
+/* CARD */
+.card {
+  background-color: #393e46;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container-card {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin: 100px;
+}
+
+/* FORM */
+
+.container-form {
+  max-width: 400px; /* Atur sesuai kebutuhan Anda */
+  margin: 0 auto; /* Untuk membuat form berada di tengah */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.container-form form {
+  margin-top: 20px;
+}
+
+.container-form form div {
+  margin-bottom: 10px;
+}
+
+.container-form form label {
+  display: block;
+  font-weight: bold;
+
+  color: white;
+}
+
+.container-form form input[type="text"],
+.container-form form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.container-form form button {
+  padding: 10px 20px;
+  display: block;
+  margin: 0 auto;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.container-form form button:hover {
+  background-color: #0056b3;
+}
+
+/* RESPONSIVE */
+
+/* Media query untuk tablet */
+@media (max-width: 900px) {
+  /* CARD */
+  .container-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    margin: 0 15px;
+  }
+}
+
+/* Media query untuk ponsel */
+@media (max-width: 480px) {
+  /* HEADER */
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .add-note {
+    margin-top: 20px;
+  }
+
+  /* CARD */
+  .container-card {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    margin: 0 15px;
+  }
+}
